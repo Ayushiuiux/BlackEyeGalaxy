@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+/*!
+* Start Bootstrap - Scrolling Nav v4.3.0 (https://startbootstrap.com/template/scrolling-nav)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap v4.6.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+
+@media print {
+
+  abbr[title]::after {
+    content: " ("attr(title) ")";
+  }
+
+}
+
+header {
+  padding: 156px 0 100px;
+}
+
+.section_box {
+  padding: 80px 0;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: initial;
+}
+
+
+/* anomation of galaxy css start here */
+
+/* colors */
+/* $red: #F44336;
+$pink: #E91E63;
+$purple: #9C27B0;
+$blue: #2962FF;
+$light-blue: #03A9F4;
+$cyan: #00BCD4;
+$teal: #009688;
+$green: #4CAF50;
+$yellow: #FFEB3B;
+$orange: #FF9800;
+$gray: #757575;
+$light-gray: #E0E0E0;
+$dark-gray: #212121;
+$transparent: rgba(255, 255, 255, 0); */
+
+/* $colors: ('red': #F44336, 'pink': #E91E63,
+  'purple': $purple, 'blue': $blue,
+  'light-blue': $light-blue, 'cyan': $cyan,
+  'teal': $teal, 'green': $green,
+  'yellow': $yellow, 'orange': $orange); */
+
+@each $color_name,
+$color in $colors {
+  .#{$color_name}-background {
+    background-color: #{$color};
+  }
+}
+
+@mixin cross-browser($mixin, $i) {
+  -webkit-#{$mixin}: $i;
+  -moz-#{$mixin}: $i;
+  -ms-#{$mixin}: $i;
+  #{$mixin}: $i;
+}
+
+/* END DEFAULTS */
+.galaxy-wrapper1 {
+  background-image: url('../images/bg.png');
+}
+.galaxy-wrapper {
+  position: fixed;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #212121; */
+  /* background: linear-gradient(30deg, #212121 25%, transparent 80%); */
+  overflow: hidden;
+  /* background-image: url('../images/bg.png'); */
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.galaxy-wrapper .star {
+  position: absolute;
+  z-index: 10;
+  border-radius: 50%;
+  background-color: #F8C9EF;
+  box-shadow: 0 0 5px #F8C9EF;
+  transition: .3s;
+}
+
+.galaxy-wrapper .galaxy {
+  z-index: -1;
+  position: absolute;
+  left: -10%;
+  top: -50%;
+  width: 150%;
+  height: 200%;
+  /* transform: skew(60deg); */
+  /* background: radial-gradient(ellipse 40% 25%, #bd8ce6 15%, #cf77eb 30%, #8256c5 65%, #272058 100%, #272058 100%); */
+  /* --background : radial-gradient(ellipse 40% 25%, #4f4788 15%, #342d63 30%, #373065 65%, #201b40 100%, #201b40 100%); */
+  /* animation: flicker .2s linear infinite; */
+  /* background: radial-gradient(ellipse 40% 25%, #fef6fc 15%, #e7baf5 30%, #ac8fd9 65%, #5F42A3 100%, #272058 100%); */
+}
+
+.galaxy-wrapper .galaxy:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -20%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-90deg, #000 25%, transparent 85%);
+}
+
+.container {
+  position: relative;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    background: radial-gradient(ellipse 40% 25%, #f8c9ef 15%, #cf77eb 30%, #8256c5 65%, #5f42a3 100%, #272058 100%);
+  }
+
+  50% {
+    background: radial-gradient(ellipse 40% 25%, #f8c9ef 15%, #cf77eb 31%, #8256c5 67%, #5f42a3 101%, #272058 101%);
+  }
+
+  100% {
+    background: radial-gradient(ellipse 40% 25%, #f8c9ef 15%, #cf77eb 30%, #8256c5 65%, #5f42a3 100%, #272058 100%);
+  }
+}

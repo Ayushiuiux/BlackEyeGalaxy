@@ -1,0 +1,1119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Zen Dots', cursive;
+    color: #fff;
+    background: #000;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*navbar css start here*/
+.imp_info {
+    position: relative;
+    z-index: 9;
+    background: rgb(16 6 60 / 63%);
+}
+
+.navbar_menu .nav-link {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.animate {
+    padding: 15px 20px 10px;
+    /* background: #9860d0; */
+    background: rgb(0 0 0 / 80%);
+    transition: all ease 0.4s;
+}
+
+.explr_btn {
+    background: linear-gradient(135deg, #e95095, #7049ba);
+    border-radius: 25px;
+    padding: 8px 20px !important;
+    display: inline-block;
+    margin-left: 15px;
+    box-shadow: 0 0 10px 0 rgb(255 255 255 / 50%);
+}
+
+.banner_content {}
+
+.banner_content h5 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2.2px;
+}
+
+.banner_content h2 {
+    font-family: 'Zen Dots', cursive;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+.banner_content p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+}
+
+.logo {
+    width: 80px;
+}
+
+/*navbar css close here*/
+/*Banner css start here*/
+.banner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.banner1::before {
+    content: '';
+    position: absolute;
+    left: -100px;
+    bottom: -150px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/banner1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .5;
+}
+
+/* .banner::after{
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+    background-image: url(../images/banner2.png);
+    background-repeat: no-repeat;
+} */
+.banner_content {
+    text-align: center;
+}
+
+/*Banner css close here*/
+
+/*overview css start here*/
+/* .overvw_section {
+    background-image: url(../images/overvw_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.overvw_section::before {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+} */
+.overvw_section h2 {
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 35px;
+    font-size: 40px;
+}
+
+.overview_list {
+    position: relative;
+}
+
+.overview_list li {
+    /* margin: 15px auto; */
+    padding-bottom: 15px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+
+.overview_list li:not(:last-child):before {
+    content: '';
+    position: absolute;
+    left: 2.2%;
+    top: 43px;
+    width: 3px;
+    height: 45px;
+    background: #fff;
+}
+
+.ovrw_img {
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #050914;
+    position: relative;
+}
+
+.ovrw_img img {
+    width: 28px;
+}
+
+.overview_list li p {
+    width: calc(100% - 42px);
+    margin-bottom: 0;
+}
+
+/*overview css close here*/
+
+
+/*Civilizations css start here*/
+/* .civil_section {
+    background-image: url(../images/Civilizations_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.civil_section::before {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+} */
+.civil_section h2 {
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 35px;
+    font-size: 40px;
+}
+
+/*Civilizations css close here*/
+
+/*Civilizations css start here*/
+/* .cross_chain_section {
+    background-image: url(../images/cross_chain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.cross_chain_section::before {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+} */
+.cross_chain_section h2 {
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+/*Civilizations css close here*/
+
+/*Civilizations css start here*/
+/* .roadmap_section {
+    background-image: url(../images/roadmp_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.roadmap_section::before {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+} */
+.roadmap_section h2 {
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 35px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.rodmap_box1,
+.rodmap_box2 {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.roadmap_content {
+    max-width: 30%;
+    float: left;
+    margin: 1%;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.roadmap_content1 {
+    max-width: 18%;
+    float: left;
+    margin: 1%;
+    display: inline-block;
+    width: 100%;
+}
+
+.roadmap_content1_blank {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.roadmap_content p {
+    margin-bottom: 8px;
+}
+
+.radmap_line span {
+    height: 2px;
+    width: 100%;
+    background: #fff;
+}
+
+.radmap_line {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.radmap_line span {
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    display: block;
+    margin: 25px auto;
+    position: relative;
+}
+
+.radmap_line span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 4px;
+    height: 35px;
+    background-color: #fff;
+}
+
+.radmap_line span::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -15px;
+    width: 4px;
+    height: 35px;
+    background-color: #fff;
+}
+
+.roadmap_content ul {
+    margin: 0;
+}
+
+.roadmap_content ul {
+    margin: 0;
+    background: rgb(64 58 102);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.rodmap_box1 .roadmap_content::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -48px;
+    height: 100px;
+    width: 4px;
+    background: #fff;
+}
+
+.roadmap_content_Q2::after {
+    content: 'Q2' !important;
+    position: absolute;
+    bottom: 15px;
+    left: 40%;
+    font-size: 16px;
+    background: #403a66;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+}
+
+.rodmap_box1 .roadmap_content_Q4::after {
+    content: 'Q4';
+    position: absolute;
+    bottom: -25px;
+    left: 40%;
+    font-size: 16px;
+    background: #403a66;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+}
+
+.rodmap_box2 .roadmap_content::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 40%;
+    font-size: 16px;
+    background: #403a66;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+}
+
+.roadmap_content_Q3::after {
+    content: 'Q3' !important;
+}
+
+.roadmap_content_Q22::after {
+    content: "Q1'22" !important;
+}
+
+.rodmap_box2 .roadmap_content::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -55px;
+    height: 100px;
+    width: 4px;
+    background: #fff;
+}
+
+.rodmap_box1 .roadmap_content ul {
+    padding-bottom: 25px;
+}
+
+.rodmap_box2 .roadmap_content ul {
+    padding-top: 45px;
+}
+
+/*Civilizations css close here*/
+
+
+/*team_section css start here*/
+/* .team_section {
+    background-image: url(../images/stars.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} */
+/* .team_section::before {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+} */
+.team_section h2 {
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 35px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.team_img img {
+    width: 80%;
+    margin: 15px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(236 236 236 / 50%);
+}
+
+.team_cont {
+    text-align: center;
+}
+
+.team_cont a {
+    color: #eee;
+}
+
+/*team_section css close here*/
+
+/*tokenomics_section css start here*/
+/* .tokenomics_section {
+   bac kground-image: url(../images/token_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.tokenomics_section::before {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+} */
+.tokenomics_section h2 {
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 35px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.token_chart {
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+/*tokenomics_section css close here*/
+
+/*Contact Us css start here*/
+.contact_section {
+    position: relative;
+}
+
+.contact_section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/saturn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+
+.contact_section h2 {
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 80px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.cont_box {
+    background: rgb(32 27 64 / 68%);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(255 255 255 / 50%);
+}
+
+.cont_box1 a {
+    color: #fff;
+}
+
+.cont_box1 p {
+    text-align: center;
+    margin: 0;
+}
+
+.cont_box2 ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont_box2 ul li a {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.cont_box2 ul li i {
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.cont_footer {
+    background-color: rgb(0 0 0 / 50%);
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    /* margin-top: 80px; */
+    /* height: 60px; */
+    overflow: hidden;
+}
+
+/* .cont_footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 50px;
+    top: 0;
+    height: 800px;
+    width: 100%;
+    border-radius: 50%;
+
+    background-image: url('../images/footer_img.jpg');    
+    display: block;
+    width: 100%;
+    -webkit-animation: MoveUpDown 50s linear infinite;
+} */
+
+.cont_footer p {
+    margin: 0;
+}
+
+.footer_box a {
+    color: #eee;
+}
+
+.footer_box {
+    display: flex;
+}
+
+/*Contact Us css close here*/
+
+.full_section {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    right: 0;
+    top: 0;
+    /* cursor: pointer; */
+    background: rgba(0, 0, 0, .6);
+}
+
+canvas {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}
+
+canvas:active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+}
+
+a.twitter,
+a.more {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    font-family: Arial;
+    color: #33c;
+    margin-right: -500px;
+    transition: margin-right 500ms ease;
+}
+
+p {
+    margin: 3px;
+    position: relative;
+    font: normal 15px Arial;
+}
+
+p.shadow {
+    text-shadow: 1px 1px 2px #000;
+}
+
+div.layout {
+    top: -250px;
+    width: 100%;
+    position: absolute;
+    transition: top 500ms ease;
+}
+
+#instruction {
+    z-index: 1;
+    color: #f90;
+    font-family: Arial;
+    padding: 9px 0 5px 0;
+    background-color: darkslategrey;
+    top: 100%;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    opacity: .8;
+    border-radius: 0px 0px 100px 100px;
+    text-align: center;
+    transition: all 500ms ease;
+}
+
+#good-person {
+    cursor: pointer;
+    color: #f90;
+    font-family: Arial;
+    padding: 9px 0 5px 0;
+    background-color: darkslategrey;
+    bottom: -50px;
+    box-shadow: 0px -2px 4px black inset;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    opacity: .8;
+    border-radius: 100px 100px 0px 0px;
+    text-align: center;
+    transition: all 500ms ease;
+}
+
+#info {
+    border: solid 4px #444;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 2;
+    box-shadow: 0px 5px 5px black;
+    color: #aaa;
+    font-family: Arial;
+    position: relative;
+    text-align: center;
+    padding: 1px;
+    top: 0px;
+    width: 50%;
+    min-width: 500px;
+    margin: auto;
+    background: linear-gradient(-78deg, #222 23%, #446 39%, #222 45%, #222 52%, #334 55%, #222 57%);
+}
+
+span.black {
+    width: 3%;
+    height: 7%;
+    background: black;
+    position: absolute;
+    left: -1%;
+    box-shadow: -2px 0px 5px #222 inset;
+}
+
+span.right {
+    position: absolute;
+    left: 98%;
+    box-shadow: 2px 0px 5px #222 inset;
+}
+
+span.one {
+    top: 10%
+}
+
+span.two {
+    top: 19%
+}
+
+span.three {
+    top: 28%
+}
+
+span.four {
+    top: 37%
+}
+
+p.positionning {
+    width: 50%;
+    background: #000;
+    height: 2px;
+    text-align: left;
+    margin: 10px auto;
+}
+
+#timeline {
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    top: 0%;
+}
+
+.scanning {
+    background: #f90;
+    /*animation:scan 8s linear;*/
+    /* way faster on mobile without that*/
+}
+
+@keyframes scan {
+    0% {
+        width: 0%;
+        box-shadow: 0px 0px 20px 5px #f90;
+    }
+
+    100% {
+        width: 100%;
+        box-shadow: 0px 0px 20px 5px #f90;
+    }
+}
+
+.waiting {
+    background: #3c4;
+    /*animation:wait 4s infinite;*/
+    /*same*/
+}
+
+@keyframes wait {
+    0% {
+        width: 100%;
+        box-shadow: 0px 0px 20px 3px #3c4;
+    }
+
+    50% {
+        width: 100%;
+        box-shadow: 0px 0px 0px 0px #3c4;
+    }
+
+    100% {
+        width: 100%;
+        box-shadow: 0px 0px 20px 3px #3c4;
+    }
+}
+
+.warning {
+    background: #f50;
+    animation: warn 1s infinite;
+}
+
+@keyframes warn {
+    0% {
+        width: 100%;
+        box-shadow: 0px 0px 0px 0px #f50;
+    }
+
+    50% {
+        width: 100%;
+        box-shadow: 0px 0px 20px 3px #f50;
+    }
+
+    100% {
+        width: 100%;
+        box-shadow: 0px 0px 0px 0px #f50;
+    }
+}
+
+span.eye {
+    width: 40px;
+    height: 40px;
+    background: -webkit-radial-gradient(orange 0%, red 20%, black 60%, #555 61%);
+    background: -moz-radial-gradient(orange 0%, red 20%, black 60%, #555 61%);
+    background: -ms-radial-gradient(orange 0%, red 20%, black 60%, #555 61%);
+    background: -o-radial-gradient(orange 0%, red 20%, black 60%, #555 61%);
+    border-radius: 50%;
+    position: absolute;
+    left: 47px;
+    top: 7px;
+}
+
+span.metal {
+    font: bold 10px Arial;
+    width: 40px;
+    height: 40px;
+    background: -webkit-radial-gradient(#777 15%, #888 35%, #666 50%, #888 55%, #555 65%);
+    background: -moz-radial-gradient(#666 0%, #777 15%, #888 35%, #666 50%, #888 55%, #555 65%);
+    background: -ms-radial-gradient(#666 0%, #777 15%, #888 35%, #666 50%, #888 55%, #555 65%);
+    background: -o-radial-gradient(#666 0%, #777 15%, #888 35%, #666 50%, #888 55%, #555 65%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 3px black;
+    position: absolute;
+    right: 47px;
+    top: 7px;
+    color: #222;
+}
+
+.clic {
+    animation: clic .2s linear 2 alternate;
+}
+
+@keyframes clic {
+    0% {
+        box-shadow: 0px 0px 15px 3px black
+    }
+
+    100% {
+        box-shadow: 0px 0px 15px 3px green
+    }
+}
+
+span.metal:after {
+    position: relative;
+    content: 'ABORT';
+    text-align: center;
+    width: 100%;
+    top: 14px
+}
+
+.abort {
+    animation: aborting .4s linear infinite alternate;
+}
+
+@keyframes aborting {
+    0% {
+        color: #222;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+#log {
+    font: normal 15px Courier;
+    border-radius: 10px;
+    height: 36px;
+    padding: 3px 15px;
+    background: black;
+}
+
+#howmuch {
+    top: 20%;
+    height: 71%;
+    width: 58px;
+    position: absolute;
+    text-align: center;
+    border: solid 4px #444;
+    border-left: none;
+    border-radius: 0px 10px 10px 0px;
+    background: #222;
+    padding: 2px;
+    left: -100px;
+    transition: left 500ms ease;
+}
+
+#good {
+    top: 15%;
+    color: #590;
+    font: bold 15px Arial;
+    left: 1px;
+}
+
+#bad {
+    font: bold 15px Arial;
+    color: #a11;
+    position: absolute;
+    bottom: 22%;
+    left: 4px;
+}
+
+#gauge {
+    position: absolute;
+    top: 50%;
+    left: 11px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 19px solid #444;
+    border-right: 19px solid #444;
+    width: 2px;
+    transition: top 2s ease;
+}
+
+#bg {
+    width: 40px;
+    height: 40%;
+    background: black;
+    position: absolute;
+    top: 30%;
+    left: 11px;
+}
+
+p.counter-title {
+    color: #aaa;
+    font: normal 10px Arial;
+}
+
+#destroyed {
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+}
+
+p.counter {
+    width: 40px;
+    height: 40px;
+    left: 7px;
+    border-radius: 50%;
+    border: solid 1px #555;
+    position: absolute;
+    font: bold 37px Arial;
+    color: #aaa;
+    background: #222;
+}
+
+#destroyedresult {
+    bottom: 30px;
+}
+
+p.change {
+    animation: changing 2s linear;
+}
+
+@keyframes changing {
+    0% {
+        background: #ccc;
+    }
+
+    100% {
+        background: #222;
+    }
+}
+
+.banner_effect::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -30%;
+    background-image: url(../images/heder_effect.png);
+    width: 500px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.banner_effect::after {
+    content: '';
+    position: absolute;
+    right: 2%;
+    top: -18%;
+    background-image: url(../images/top_effect.png);
+    width: 180px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+}
+
+
+/* planet css here */
+.planet {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 60px -20px rgba(255, 189, 3, 0.72), -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
+    left: 80%;
+    top: 50%;
+    margin: -150px;
+    animation-name: planetanimation;
+    animation-duration: 20s;
+}
+
+@keyframes planetanimation {
+    0% {
+        left: 5%;
+        top: 10%;
+    }
+
+    100% {
+        left: 80%;
+        top: 50%;
+    }
+}
+
+.planet .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-shadow: inset -10px -10px 40px #251303, inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
+    border-radius: 50%;
+}
+
+.planet .background {
+    animation: translateBackground 40s infinite linear;
+    background: url(http://artem.anmedio.ru/dev/planet/mars.jpg) repeat-x;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.planet .clouds {
+    background: url(http://artem.anmedio.ru/dev/planet/clouds.png) repeat-x;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    animation: translateBackground 30s infinite linear;
+    opacity: 0.4;
+}
+
+.planet .wrap {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    animation: rotatePlanet 150s infinite linear;
+}
+
+@keyframes translateBackground {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -600px;
+    }
+}
+
+@keyframes rotatePlanet {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+.planet1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('../images/planet_glob.png');
+    background-size: contain;
+    overflow: hidden;
+    /* box-shadow: 0 0 60px -20px rgba(255, 189, 3, 0.72), -14px -15px 40px -10px rgba(255, 238, 191, 0.23); */
+    right: 35%;
+    top: 70%;
+    margin: -150px;
+    animation-name: planetanimation1;
+    animation-duration: 8s;    
+}
+@keyframes planetanimation1 {
+    0%   {right: 35%; top:70%; width: 0; height: 0;}
+    100% {right: 35%; top:70%; width: 300px; height: 300px;}
+}
